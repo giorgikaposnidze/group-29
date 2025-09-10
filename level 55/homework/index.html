@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Task 1 -->
+  <h2 id="result1"></h2>
+  <input type="number" id="age" placeholder="Enter your age">
+  <input type="text" id="phrase" placeholder="Favorite phrase">
+  <button onclick="task1()">Submit</button>
+
+  <hr>
+
+  <!-- Task 2 -->
+  <label>Current value: <span id="rangeValue">0</span></label>
+  <input type="range" id="rangeInput" min="0" max="100">
+
+  <hr>
+
+  <!-- Task 3 -->
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <input type="text" id="emojiInput" placeholder="Enter emoji">
+  <button onclick="task3()">Greet</button>
+  <h1 id="greeting"></h1>
+
+  <hr>
+
+  <!-- Task 4 -->
+  <textarea id="messageBox" placeholder="Write your message"></textarea>
+  <button onclick="task4()">Send</button>
+  <p id="messageDisplay"></p>
+
+  <hr>
+
+  <!-- Task 5 -->
+  <input type="number" id="num1" placeholder="Number 1">
+  <input type="number" id="num2" placeholder="Number 2">
+  <button onclick="task5()">Add</button>
+  <h2 id="sumResult"></h2>
+
+  <hr>
+
+  <!-- Task 6 -->
+  <input type="text" id="textInput" placeholder="Enter text">
+  <button onclick="task6()">Count characters</button>
+  <p id="charCount"></p>
+
+  <hr>
+
+  <!-- Task 7 -->
+  <input type="text" id="colorInput" placeholder="Enter a color (red, blue...)">
+  <button onclick="task7()">Change background</button>
+
+  <script>
+    // Task 1
+    function task1() {
+      let age = document.getElementById("age").value;
+      let phrase = document.getElementById("phrase").value;
+      document.getElementById("result1").innerText = `Your age is ${age} and your favorite phrase is: ${phrase}`;
+    }
+
+    // Task 2
+    let range = document.getElementById("rangeInput");
+    let span = document.getElementById("rangeValue");
+    range.addEventListener("input", () => {
+      span.innerText = range.value;
+    });
+
+    // Task 3
+    function task3() {
+      let name = document.getElementById("nameInput").value;
+      let emoji = document.getElementById("emojiInput").value;
+      document.getElementById("greeting").innerText = `Please welcome: ${emoji} ${name}!`;
+    }
+
+    // Task 4
+    function task4() {
+      let message = document.getElementById("messageBox").value;
+      document.getElementById("messageDisplay").innerText = message;
+      document.body.style.backgroundColor = "lightyellow";
+    }
+
+    // Task 5
+    function task5() {
+      let a = Number(document.getElementById("num1").value);
+      let b = Number(document.getElementById("num2").value);
+      document.getElementById("sumResult").innerText = `Sum: ${a + b}`;
+    }
+
+    // Task 6
+    function task6() {
+      let text = document.getElementById("textInput").value;
+      document.getElementById("charCount").innerText = `Character count: ${text.length}`;
+    }
+
+    // Task 7
+    function task7() {
+      let color = document.getElementById("colorInput").value;
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>

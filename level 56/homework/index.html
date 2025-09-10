@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasks</title>
+</head>
+<body>
+
+  <!-- დავალება 1 -->
+  <h2 id="result1"></h2>
+  Age: <input type="number" id="ageInput">
+  Phrase: <input type="text" id="phraseInput">
+  <button onclick="task1()">Submit</button>
+
+  <hr>
+
+  <!-- დავალება 2 -->
+  <label for="rangeInput">Current value: <span id="rangeValue">50</span></label>
+  <input type="range" id="rangeInput" min="0" max="100" value="50" oninput="task2()">
+
+  <hr>
+
+  <!-- დავალება 3 -->
+  <input type="text" id="nameInput" placeholder="Your name">
+  <input type="text" id="emojiInput" placeholder="Emoji">
+  <button onclick="task3()">Greet</button>
+  <h1 id="result3"></h1>
+
+  <hr>
+
+  <!-- დავალება 4 -->
+  <textarea id="messageInput" placeholder="Write a message"></textarea>
+  <button onclick="task4()">Send</button>
+  <p id="messageResult"></p>
+
+  <hr>
+
+  <!-- დავალება 5 -->
+  <input type="number" id="num1">
+  <input type="number" id="num2">
+  <button onclick="task5()">Add</button>
+  <h2 id="sumResult"></h2>
+
+  <hr>
+
+  <!-- დავალება 6 -->
+  <input type="text" id="textInput">
+  <button onclick="task6()">Count characters</button>
+  <p id="charCount"></p>
+
+  <hr>
+
+  <!-- დავალება 7 -->
+  <input type="text" id="colorInput" placeholder="e.g. red">
+  <button onclick="task7()">Change background</button>
+
+  <script>
+    // დავალება 1 - მომხმარებლის ასაკი და ფრაზა h2-ში გამოჩნდეს
+    function task1() {
+      const age = document.getElementById("ageInput").value;
+      const phrase = document.getElementById("phraseInput").value;
+      document.getElementById("result1").innerText = `Your age is ${age} and favorite phrase is: ${phrase}`;
+    }
+
+    // დავალება 2 - range input-ის live მნიშვნელობა გამოჩნდეს span-ში
+    function task2() {
+      const rangeValue = document.getElementById("rangeInput").value;
+      document.getElementById("rangeValue").innerText = rangeValue;
+    }
+
+    // დავალება 3 - მიესალმოს emoji-სა და სახელს ერთად
+    function task3() {
+      const name = document.getElementById("nameInput").value;
+      const emoji = document.getElementById("emojiInput").value;
+      document.getElementById("result3").innerText = `Please welcome: ${emoji} ${name}!`;
+    }
+
+    // დავალება 4 - შეტყობინება გამოჩნდეს და ფონი შეიცვალოს
+    function task4() {
+      const msg = document.getElementById("messageInput").value;
+      document.getElementById("messageResult").innerText = msg;
+      document.body.style.backgroundColor = "lightyellow";
+    }
+
+    // დავალება 5 - ორი რიცხვის ჯამი
+    function task5() {
+      const a = Number(document.getElementById("num1").value);
+      const b = Number(document.getElementById("num2").value);
+      document.getElementById("sumResult").innerText = `Sum: ${a + b}`;
+    }
+
+    // დავალება 6 - დაითვალოს შეყვანილი სიმბოლოების რაოდენობა
+    function task6() {
+      const text = document.getElementById("textInput").value;
+      document.getElementById("charCount").innerText = `Character count: ${text.length}`;
+    }
+
+    // დავალება 7 - საყვარელი ფერის შეყვანა და ფონის შეცვლა
+    function task7() {
+      const color = document.getElementById("colorInput").value;
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>

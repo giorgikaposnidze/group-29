@@ -1,0 +1,23 @@
+#color-box {
+    background-color: rgb(200, 150, 255);
+    padding: 20px; 
+    font-size: 18px; 
+    border-radius: 10px;
+}
+
+.color-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.color-text:nth-child(1) {
+    color: rgb(255, 100, 100);
+}
+
+.color-text:nth-child(2) {
+    color: rgb(100, 255, 100);
+}
+
+.color-text:nth-child(3) {
+    color: rgb(100, 100, 255);
+}

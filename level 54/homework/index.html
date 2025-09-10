@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interaction Prompts</title>
+</head>
+<body>
+  <p id="message"></p>
+
+  <script>
+    // 1)
+    const hobby = prompt("What is your favorite hobby?");
+    alert("Your favorite hobby is: " + hobby);
+
+    // 2)
+    const firstName = prompt("Enter your first name:");
+    const lastName = prompt("Enter your last name:");
+    alert("Your full name is: " + firstName + " " + lastName);
+
+    // 3)
+    const userMessage = prompt("Enter a message to display on the page:");
+    document.getElementById("message").textContent = userMessage;
+
+    // 4)
+    const emoji = prompt("What is your favorite emoji?");
+    alert("Thanks! You entered: " + emoji);
+
+    // 5)
+    const newTitle = prompt("Enter a word to set as the page title:");
+    document.title = newTitle;
+
+    // 5) Prompt for text and show in alert
+    const someText = prompt("Enter some text:");
+    alert("You entered: " + someText);
+
+    // 6) Prompt for color and change background
+    const bgColor = prompt("Enter a color (name or hex) for the background:");
+    document.body.style.backgroundColor = bgColor;
+
+    // 7) Prompt for first and last name, show in <h1>
+    const first = prompt("Enter your first name:");
+    const last = prompt("Enter your last name:");
+    document.getElementById("displayFullName").textContent = first + " " + last;
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png);
+  text-align: center;
+  padding-top: 100px;
+  font-family: Arial, sans-serif;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+#login{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    height: 20px;
+    width: 70px;
+    background-color: black;
+}
+
+#h6 {
+    color: black;
+}
+
+#button {
+  color: #fff;
+  width: 100px;
+  background-color: black;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 20px;
+}

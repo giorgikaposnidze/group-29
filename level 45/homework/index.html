@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Positioning Tasks</title>
+  <style>
+    /* 1. Center a Div Horizontally */
+    .center-div {
+      width: 200px;
+      margin: 0 auto;
+      background: lightblue;
+      padding: 10px;
+    }
+
+    /* 2. Move an Image to the Right */
+    .right-image {
+      display: block;
+      margin-left: auto;
+    }
+
+    /* 3. Stick a Header at the Top */
+    header {
+      position: sticky;
+      top: 0;
+      background: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    /* 4. Move a Button to the Bottom of a Div */
+    .button-container {
+      position: relative;
+      height: 150px;
+      background: #f0f0f0;
+    }
+
+    .bottom-button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    /* 5. Place Text Over an Image */
+    .image-wrapper {
+      position: relative;
+      width: 300px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+    }
+
+    /* 6. Fix a Footer to the Bottom of the Page */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* 7. Move a Box Slightly Up */
+    .move-up {
+      position: relative;
+      top: -10px;
+      background: lightgreen;
+      padding: 10px;
+    }
+
+    /* 8. Align Two Elements Side by Side */
+    .side-by-side {
+      display: flex;
+      gap: 10px;
+    }
+
+    .side-box {
+      width: 100px;
+      height: 100px;
+      background: lightgray;
+    }
+
+    /* 9. Float an Image to the Left */
+    .float-image {
+      float: left;
+      margin-right: 10px;
+    }
+
+    /* 10. Add Space Between Two Elements */
+    .spaced-container {
+      position: relative;
+      height: 120px;
+    }
+
+    .box1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      background: orange;
+    }
+
+    .box2 {
+      position: absolute;
+      left: 120px;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      background: teal;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center-div">Centered Div</div>
+
+  <img src="https://via.placeholder.com/100" class="right-image" alt="Right Aligned Image">
+
+  <header>Sticky Header</header>
+
+  <div class="button-container">
+    <button class="bottom-button">Bottom Button</button>
+  </div>
+
+  <div class="image-wrapper">
+    <img src="https://via.placeholder.com/300x150" alt="Image">
+    <div class="image-text">Centered Text</div>
+  </div>
+
+  <footer>Fixed Footer</footer>
+
+  <div class="move-up">Moved Up Box</div>
+
+  <div class="side-by-side">
+    <div class="side-box"></div>
+    <div class="side-box"></div>
+  </div>
+
+  <div>
+    <img src="https://via.placeholder.com/100" class="float-image" alt="Floating">
+    <p>This text wraps around the floated image.</p>
+  </div>
+
+  <div class="spaced-container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+
+</body>
+</html>

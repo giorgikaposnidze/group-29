@@ -1,0 +1,17 @@
+<div id="parent" style="background: lightblue; padding: 30px;">
+  <button id="child">Click Me</button>
+</div>
+
+<script>
+document.getElementById("parent").addEventListener("click", function(){
+    console.log("Parent clicked!");
+}, false);
+
+document.getElementById("child").addEventListener("click", function(){
+    console.log("Child clicked!");
+}, false);
+
+document.getElementById("parent").addEventListener("click", function(){
+    console.log("Parent capturing clicked!");
+}, true);
+</script>

@@ -1,0 +1,16 @@
+
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem;
+        padding: 5px;
+        line-height: 1.4;
+    }
+
+    p {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+  

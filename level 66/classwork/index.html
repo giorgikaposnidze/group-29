@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+
+    #greeting {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    #changeButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    #changeButton:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="greeting">helloooooooooo!</div>
+  <button id="changeButton">how are youuu?</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+---------------------------
+const greetingDiv = document.getElementById("greeting");
+const button = document.getElementById("changeButton");
+
+button.addEventListener("click", function () {
+  greetingDiv.textContent = "Hello Giorgi";
+});

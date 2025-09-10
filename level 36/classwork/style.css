@@ -1,0 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+#styled-text {
+    font-size: 18px;
+    color: #333;
+    transition: font-family 0.3s ease-in-out;
+}
+
+#styled-text:hover {
+    font-family: 'Montserrat', sans-serif;
+}

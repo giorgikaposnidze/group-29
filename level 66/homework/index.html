@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Slider</title>
+<style>
+  body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Image Slider</h1>
+  <img id="image" src="0.jpg" alt="Slider Image"><br>
+  <button id="previous">Previous</button>
+  <button id="next">Next</button>
+
+<script>
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+
+let image = document.getElementById("image");
+ 
+let index = 0;
+
+const images = ["0.jpg", "1.jpg", "2.jpg"];
+
+function showImage(currIndex){
+    index = currIndex;
+    if(index >= images.length){
+        index = 0;
+    } else if(index < 0){
+        index = images.length - 1; 
+    }
+    image.src = images[index];
+}
+
+previous.addEventListener("click", function(){
+    showImage(index - 1);
+});
+
+next.addEventListener("click", function(){
+    showImage(index + 1);
+});
+</script>
+
+</body>
+</html>

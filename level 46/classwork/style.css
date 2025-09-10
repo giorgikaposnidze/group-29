@@ -1,0 +1,51 @@
+.parent{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px 30% 40px 50%;
+    transform-origin: right top;
+}
+
+.box { 
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, left 0.2s ease, top 0.2s ease;
+    position: relative;
+}
+
+.box:hover {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(45deg);
+}
+
+.box:active {
+    transform: translate(-50px, -100px);
+}
+
+
+
+
+
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: font-size 1s, background-color 2s, color 2s;
+}
+
+
+.box:active {
+    font-size: 25px;
+    background-color: white;
+    color: black;
+}
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-weight: bold;
+            height: 100px;
+        }
+
+        .box1, .box8 {
+            width: 80%;
+        }
+
+        .box1 { background: red; }
+        .box8 { background: blueviolet; }
+
+        .middle-container {
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .middle-container .box {
+            flex: 1;
+        }
+
+        .box2 { background: tan; }
+        .box3 { background: yellow; }
+        .box4 { background: pink; }
+        .box5 { background: green; }
+        .box6 { background: pink; }
+        .box7 { background: darkslategray; }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: dodgerblue;">CSS Flexbox</h1>
+    
+    <div class="container">
+        <div class="box box1">BOX 1</div>
+        
+        <div class="middle-container">
+            <div class="box box2">BOX 2</div>
+            <div class="box box3">BOX 3</div>
+            <div class="box box4">BOX 4</div>
+            <div class="box box5">BOX 5</div>
+            <div class="box box6">BOX 6</div>
+            <div class="box box7">BOX 7</div>
+        </div>
+        
+        <div class="box box8">BOX 8</div>
+    </div>
+</body>
+</html>

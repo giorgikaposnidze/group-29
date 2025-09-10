@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 1_____________________________________ -->
+    RGB (Red, Green, Blue) Model
+              /           |           \
+            /             |             \
+    #FF0000 (Red)     #00FF00 (Green)  #0000FF (Blue)
+
+    Hexadecimal colors are represented as #RRGGBB
+    where:
+      RR - Red component (00-FF)
+      GG - Green component (00-FF)
+      BB - Blue component (00-FF)
+
+<!-- 2_____________________________________ -->
+        .rgb1 {
+            color: rgb(255, 0, 0); /* Red text */
+            background-color: rgb(0, 0, 0); /* Black background */
+        }
+        .rgb2 {
+            color: rgb(0, 255, 0); /* Green text */
+            background-color: rgb(255, 255, 255); /* White background */
+        }
+        .rgb3 {
+            color: rgb(0, 0, 255); /* Blue text */
+            background-color: rgb(255, 255, 0); /* Yellow background */
+        }
+        .rgb4 {
+            color: rgb(255, 165, 0); /* Orange text */
+            background-color: rgb(0, 0, 255); /* Blue background */
+        }
+        .rgb5 {
+            color: rgb(75, 0, 130); /* Indigo text */
+            background-color: rgb(255, 192, 203); /* Pink background */
+        }
+
+        .hex1 {
+            color: #FF0000; /* Red text */
+            background-color: #000000; /* Black background */
+        }
+        .hex2 {
+            color: #00FF00; /* Green text */
+            background-color: #FFFFFF; /* White background */
+        }
+        .hex3 {
+            color: #0000FF; /* Blue text */
+            background-color: #FFFF00; /* Yellow background */
+        }
+        .hex4 {
+            color: #FFA500; /* Orange text */
+            background-color: #0000FF; /* Blue background */
+        }
+        .hex5 {
+            color: #4B0082; /* Indigo text */
+            background-color: #FFC0CB; /* Pink background */
+        }
+
+    <p class="rgb1">This is a red text with a black background using the RGB color model.</p>
+    <p class="rgb2">This is a green text with a white background using the RGB color model.</p>
+    <p class="rgb3">This is a blue text with a yellow background using the RGB color model.</p>
+    <p class="rgb4">This is an orange text with a blue background using the RGB color model.</p>
+    <p class="rgb5">This is an indigo text with a pink background using the RGB color model.</p>
+
+    <p class="hex1">This is a red text with a black background using the Hex color model.</p>
+    <p class="hex2">This is a green text with a white background using the Hex color model.</p>
+    <p class="hex3">This is a blue text with a yellow background using the Hex color model.</p>
+    <p class="hex4">This is an orange text with a blue background using the Hex color model.</p>
+    <p class="hex5">This is an indigo text with a pink background using the Hex color model.</p>
+
+<!-- 3_____________________________________ -->
+        .parent {
+            width: 1000px;
+            height: 1000px;
+            background-color: #008000;
+        }
+
+        .child {
+            width: 20%; 
+            height: 15%;
+            background-color: #000000;
+        }
+<!-- 3_____________________________________ -->
+        .block {
+            height: 150px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .block1{
+            background-color: #FF0000; 
+        }
+
+        .block2 {
+            background-color: #00FF00;
+        }
+
+        .block3 {
+            background-color: #0000FF;
+        }
+
+
+        .block4 {
+            background-color: #FFFF00;
+        }
+
+        .block5 {
+            background-color: #FFA500;
+        }
+
+        .block6 {
+            background-color: #4B0082;
+        }
+
+        .block7 {
+            background-color: #FFC0CB;
+        }
+
+        .block8 {
+            background-color: #000000;
+        }
+
+        .block9 {
+            background-color: #87CEEB;
+        }
+
+        .block10 {
+            background-color: #808080;
+        }
+
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block4"></div>
+    <div class="block block5"></div>
+    <div class="block block6"></div>
+    <div class="block block7"></div>
+    <div class="block block8"></div>
+    <div class="block block9"></div>
+    <div class="block block10"></div>
+    
+</body>
+</html>

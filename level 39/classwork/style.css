@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+#myParagraph {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+#myParagraph:hover {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+styled-table th , td{
+    border: 
+    border_colapsecolapse
+}
