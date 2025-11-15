@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Movie Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie List</h1>
+    <input type="text" id="search" placeholder="Search for a movie...">
+  </header>
+
+  <main id="movie-container"></main>
+
+  <script>
+    const movies = [
+      { title: 'Inception', year: 2010, image: 'https://via.placeholder.com/200x300?text=Inception' },
+      { title: 'Interstellar', year: 2014, image: 'https://via.placeholder.com/200x300?text=Interstellar' },
+      { title: 'The Dark Knight', year: 2008, image: 'https://via.placeholder.com/200x300?text=The+Dark+Knight' },
+      { title: 'Tenet', year: 2020, image: 'https://via.placeholder.com/200x300?text=Tenet' }
+    ];
+
+    const container = document.getElementById('movie-container');
+    const search = document.getElementById('search');
+
+    function showMovies(list) {
+      container.innerHTML = '';
+      list.forEach(movie => {
+        const card = document.createElement('div');
+        card.className = 'movie-card';
+        card.innerHTML = `
+          <img src="${movie.image}" alt="${movie.title}">
+          <h2>${movie.title}</h2>
+          <p>${movie.year}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    search.addEventListener('input', () => {
+      const term = search.value.toLowerCase();
+      const filtered = movies.filter(m => m.title.toLowerCase().includes(term));
+      showMovies(filtered);
+    });
+
+    showMovies(movies);
+  </script>
+</body>
+</html>
