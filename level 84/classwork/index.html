@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+    const input = prompt("Enter any number:");
+    const num = Number(input);
+
+    if (Number.isNaN(num)) {
+      alert("Please enter a valid number.");
+    } else {
+      const nearest = Math.round(num);
+      const up = Math.ceil(num);
+      const down = Math.floor(num);
+      const abs = Math.abs(num);
+
+      alert(
+        "Rounded to the nearest integer: " + nearest + "\n" +
+        "Rounded up to the next integer: " + up + "\n" +
+        "Rounded down to the previous integer: " + down + "\n" +
+        "Absolute value: " + abs
+      );
+    }
+  </script>
+</body>
+</html>
